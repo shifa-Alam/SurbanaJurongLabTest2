@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "lM4t5AC/gkwq2MaQx+Aji++NCfB2VBEDFAF11izU9fFVbPGo8w63t+C/zd84HPOhTRnAT/X+Wkkig7+YfgWvAA==",
+  "dgSpecHash": "HXbD8x5e2DaEsQz+2SFHdNSCzTSGdTB8XzIQg2djczAYxmqP5S3RNrFXvWf8R/FWWc6bQ4erHI0ydqBVIwMiIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj",
+  "projectFilePath": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\RITE-065\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
-    "C:\\Users\\RITE-065\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
-    "C:\\Users\\RITE-065\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512"
+    "C:\\Users\\shifa\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\shifa\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\shifa\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512"
   ],
   "logs": []
 }

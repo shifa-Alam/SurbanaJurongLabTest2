@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "IM.bll/1.0.0": {
+        "dependencies": {
+          "IM.Core": "1.0.0"
+        },
+        "runtime": {
+          "IM.bll.dll": {}
+        }
+      },
+      "IM.Core/1.0.0": {
+        "runtime": {
+          "IM.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IM.bll/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IM.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

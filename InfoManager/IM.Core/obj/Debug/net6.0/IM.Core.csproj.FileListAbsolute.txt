@@ -1,0 +1,12 @@
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\bin\Debug\net6.0\IM.Core.deps.json
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\bin\Debug\net6.0\IM.Core.dll
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\bin\Debug\net6.0\IM.Core.pdb
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.csproj.AssemblyReference.cache
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.AssemblyInfoInputs.cache
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.AssemblyInfo.cs
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.csproj.CoreCompileInputs.cache
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.dll
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\refint\IM.Core.dll
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.pdb
+D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\ref\IM.Core.dll
