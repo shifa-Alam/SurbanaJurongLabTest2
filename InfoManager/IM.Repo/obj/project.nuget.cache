@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6L+liMy28yi/hempNSuV4GR95dE6E+X2WkO9X1PLkWS00Sz+GlIY6ECNmVvpZ+LfdxgpNysFiTX5Q0CbZtlcDg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RITE-065\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\RITE-065\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\RITE-065\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}
