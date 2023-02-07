@@ -41,6 +41,7 @@ namespace IM.bll.Services
                 {
                     memberSkill.Active = true;
                     memberSkill.CreatedDate = entity.CreatedDate;
+                  
                     //_repo.MemberSkillR.Add(memberSkill);
                 }
             }

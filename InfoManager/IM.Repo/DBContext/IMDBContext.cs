@@ -25,7 +25,7 @@ namespace IM.Repo.DBContext
         {
 
             modelBuilder.Entity<Member>().HasOne(s => s.Country).WithMany(g => g.Members).HasForeignKey(s => s.CountryId);
-            modelBuilder.Entity<MemberSkill>().HasOne(s => s.Member).WithMany(g => g.MemberSkills).HasForeignKey(e => e.SkillId);
+            modelBuilder.Entity<MemberSkill>().HasOne(s => s.Member).WithMany(g => g.MemberSkills).HasForeignKey(e => e.MemberId);
             modelBuilder.Entity<MemberSkill>().HasOne(s => s.Skill).WithMany(g => g.MemberSkills).HasForeignKey(e => e.SkillId);       
             modelBuilder.Entity<City>().HasOne(s => s.Country).WithMany(g => g.Cities).HasForeignKey(e => e.CountryId);
 
