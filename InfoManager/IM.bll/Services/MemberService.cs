@@ -3,6 +3,7 @@ using IM.Core.Infra.Repos;
 using IM.Core.Services;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,11 @@ namespace IM.bll.Services
     public class MemberService : BaseService, IMemberService
     {
         private IUnitOfWork _repo;
-        public MemberService(IUnitOfWork repo)
+        private IMemberSkillService _memberSkillService;
+        public MemberService(IUnitOfWork repo, IMemberSkillService memberSkillService)
         {
             _repo = repo;
+            _memberSkillService = memberSkillService;
         }
 
         public void Save(Member member)
@@ -25,7 +28,16 @@ namespace IM.bll.Services
             _repo.MemberR.Add(member);
             _repo.Save();
         }
+        public void SaveWithSkills(Member entity)
+        {
+            entity.Active = true;
+            entity.CreatedDate = DateTime.Now;
 
+            _memberSkillService.OnMemberSave(entity);
+
+            _repo.MemberR.Add(entity);
+            _repo.Save();
+        }
         public void Update(Member member)
         {
             var existingEntity = _repo.MemberR.GetById(member.Id);
@@ -72,5 +84,7 @@ namespace IM.bll.Services
         {
             _repo?.Dispose();
         }
+
+
     }
 }

@@ -35,15 +35,28 @@ namespace IM.web1.Controllers
             //var mappedData = _mapper.Map<Member>(memberIn);
 
             //_memberService.Save(mappedData);
+            List<MemberSkill> skills = new List<MemberSkill>();
+
+            foreach (var item in memberIn.MemberSkills)
+            {
+                var skill = new MemberSkill
+                {
+                    SkillId = item.SkillId
+                };
+                skills.Add(skill);
+            }
+
             var member = new Member
             {
                 Name = memberIn.Name,
-                //CountryId = memberIn.CountryId,
+                CountryId = memberIn.CountryId,
                 //CityId = memberIn.CityId,
                 DateOfBirth = memberIn.DateOfBirth,
-                //Skills = memberIn.Skills
+                CreatedDate = DateTime.Now,
+                MemberSkills = skills
             };
-            _memberService.Save(member);
+
+            _memberService.SaveWithSkills(member);
             return Ok();
         }
         [HttpPost]
@@ -87,23 +100,23 @@ namespace IM.web1.Controllers
         [Route("getMembers")]
         public IActionResult GetMembers()
         {
-            //var members = _memberService.Get();
-            List<Member> members=new List<Member>();
-            members.Add(new Member
-            {
-                Id=10,
-                Name="Member 1"
-            });
-            members.Add(new Member
-            {
-                Id = 10,
-                Name = "Member 2"
-            });
-            members.Add(new Member
-            {
-                Id = 10,
-                Name = "Member 3"
-            });
+            var members = _memberService.Get();
+            //List<Member> members=new List<Member>();
+            //members.Add(new Member
+            //{
+            //    Id=10,
+            //    Name="Member 1"
+            //});
+            //members.Add(new Member
+            //{
+            //    Id = 10,
+            //    Name = "Member 2"
+            //});
+            //members.Add(new Member
+            //{
+            //    Id = 10,
+            //    Name = "Member 3"
+            //});
 
             return Ok(members);
 

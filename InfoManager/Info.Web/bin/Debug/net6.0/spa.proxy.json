@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44495",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\Info.Web\\ClientApp\\",
+"MaxTimeoutInSeconds": "120"
+}
+}

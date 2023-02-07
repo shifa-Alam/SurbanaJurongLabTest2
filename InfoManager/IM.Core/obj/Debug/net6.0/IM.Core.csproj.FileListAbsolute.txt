@@ -10,3 +10,15 @@ D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.C
 D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\refint\IM.Core.dll
 D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.pdb
 D:\dotNetProject\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\ref\IM.Core.dll
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\bin\Debug\net6.0\IM.Core.deps.json
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\bin\Debug\net6.0\IM.Core.dll
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\bin\Debug\net6.0\IM.Core.pdb
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.csproj.AssemblyReference.cache
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.AssemblyInfoInputs.cache
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.AssemblyInfo.cs
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.csproj.CoreCompileInputs.cache
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.dll
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\refint\IM.Core.dll
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\IM.Core.pdb
+C:\Users\RITE-065\Desktop\Work\SurbanaJurongLabTest2\InfoManager\IM.Core\obj\Debug\net6.0\ref\IM.Core.dll

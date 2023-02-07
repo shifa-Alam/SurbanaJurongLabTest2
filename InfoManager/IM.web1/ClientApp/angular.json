@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "IM.web1"
+  "defaultProject": "IM.web1",
+  "cli": {
+    "analytics": "f3ac37ac-ce99-4f48-a386-aefcf0b8c097"
+  }
 }

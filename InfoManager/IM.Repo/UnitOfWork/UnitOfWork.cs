@@ -20,6 +20,7 @@ namespace IM.Repo
             SkillR = new SkillRepo(_context);
             CityR = new CityRepo(_context);
             CountryR = new CountryRepo(_context);
+            MemberSkillR = new MemberSkillRepo(_context);
         }
 
         public IMemberRepo MemberR
@@ -46,6 +47,11 @@ namespace IM.Repo
             private set;
         }
 
+        public IMemberSkillRepo MemberSkillR
+        {
+            get;
+            private set;
+        }
         public virtual void Dispose()
         {
             _context.Dispose();

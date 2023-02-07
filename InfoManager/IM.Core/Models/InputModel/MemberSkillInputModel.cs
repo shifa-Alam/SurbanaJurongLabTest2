@@ -10,8 +10,8 @@ namespace IM.Core.Models.InputModel
     public class MemberSkillInputModel
     {
 
-        public int MemberId { get; set; }
-        public int SkillId { get; set; }
+        public long MemberId { get; set; }
+        public long SkillId { get; set; }
         
         public long Id { get; set; }
         public DateTime CreatedDate { get; set; }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj": {}
+    "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj": {}
   },
   "projects": {
-    "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj": {
+    "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj",
+        "projectUniqueName": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj",
         "projectName": "IM.Core",
-        "projectPath": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj",
-        "packagesPath": "C:\\Users\\shifa\\.nuget\\packages\\",
-        "outputPath": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\obj\\",
+        "projectPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj",
+        "packagesPath": "C:\\Users\\RITE-065\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\shifa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RITE-065\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,15 +53,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
+              "version": "[6.0.11, 6.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -69,21 +69,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj": {
+    "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj",
+        "projectUniqueName": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj",
         "projectName": "IM.Repo",
-        "projectPath": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj",
-        "packagesPath": "C:\\Users\\shifa\\.nuget\\packages\\",
-        "outputPath": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\obj\\",
+        "projectPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj",
+        "packagesPath": "C:\\Users\\RITE-065\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\shifa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RITE-065\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,8 +97,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj": {
-                "projectPath": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj"
+              "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj": {
+                "projectPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj"
               }
             }
           }
@@ -115,13 +115,13 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.8, )"
+              "version": "[6.0.10, )"
             }
           },
           "imports": [
@@ -138,15 +138,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
+              "version": "[6.0.11, 6.0.11]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.12, 6.0.12]"
+              "version": "[6.0.11, 6.0.11]"
             }
           ],
           "frameworkReferences": {
@@ -154,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

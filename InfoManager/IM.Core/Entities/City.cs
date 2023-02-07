@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace IM.Core.Entities
 {
-    public class City:BaseEntity
+    public class City : BaseEntity
     {
         public string Name { get; set; }
+        public long CountryId { get; set; }
+        public virtual Country Country { get; set; }
+        public ICollection<Member> Members { get; set; }
     }
 }

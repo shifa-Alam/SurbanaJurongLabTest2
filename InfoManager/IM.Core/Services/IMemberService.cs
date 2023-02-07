@@ -10,6 +10,7 @@ namespace IM.Core.Services
     public  interface IMemberService : IBaseService
     {
         public void Save(Member entity);
+        public void SaveWithSkills(Member entity);
         public void Update(Member entity);
         public void DeleteById(long id);
         public Member SoftDelete(Member entity);

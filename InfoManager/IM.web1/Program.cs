@@ -13,9 +13,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<IMDBContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+
 builder.Services.AddScoped<IMemberService, MemberService>();
 builder.Services.AddScoped<ISkillService, SkillService>();
+builder.Services.AddScoped<IMemberSkillService, MemberSkillService>();
+
 builder.Services.AddScoped<IMemberRepo, MemberRepo>();
+builder.Services.AddScoped<IMemberSkillRepo, MemberSkillRepo>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

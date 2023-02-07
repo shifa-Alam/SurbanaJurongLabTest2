@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shifa\\.nuget\\packages\\": {}
+    "C:\\Users\\RITE-065\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.bll\\IM.bll.csproj",
+      "projectUniqueName": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.bll\\IM.bll.csproj",
       "projectName": "IM.bll",
-      "projectPath": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.bll\\IM.bll.csproj",
-      "packagesPath": "C:\\Users\\shifa\\.nuget\\packages\\",
-      "outputPath": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.bll\\obj\\",
+      "projectPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.bll\\IM.bll.csproj",
+      "packagesPath": "C:\\Users\\RITE-065\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.bll\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\shifa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RITE-065\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj": {
-              "projectPath": "D:\\dotNetProject\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj"
+            "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj": {
+              "projectPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj"
             }
           }
         }
@@ -82,15 +82,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.12, 6.0.12]"
+            "version": "[6.0.11, 6.0.11]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.12, 6.0.12]"
+            "version": "[6.0.11, 6.0.11]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.12, 6.0.12]"
+            "version": "[6.0.11, 6.0.11]"
           }
         ],
         "frameworkReferences": {
@@ -98,7 +98,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

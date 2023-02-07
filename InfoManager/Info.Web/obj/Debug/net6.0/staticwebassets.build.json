@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "EBfHKgedauVbjev7zrbjFgxUqNWpWqkYYi39KAgUl74=",
+  "Source": "Info.Web",
+  "BasePath": "_content/Info.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Info.Web\\wwwroot",
+      "Source": "Info.Web",
+      "ContentRoot": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\Info.Web\\wwwroot\\",
+      "BasePath": "_content/Info.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\Info.Web\\wwwroot\\favicon.ico",
+      "SourceId": "Info.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\Info.Web\\wwwroot\\",
+      "BasePath": "_content/Info.Web",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    }
+  ]
+}

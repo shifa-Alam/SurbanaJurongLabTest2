@@ -17,7 +17,7 @@ namespace IM.Repo.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.8")
+                .HasAnnotation("ProductVersion", "6.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -31,7 +31,12 @@ namespace IM.Repo.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
                     b.Property<bool>("Active")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<long>("CountryId")
+                        .HasColumnType("bigint");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -45,6 +50,8 @@ namespace IM.Repo.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CountryId");
+
                     b.ToTable("Cities");
                 });
 
@@ -57,7 +64,9 @@ namespace IM.Repo.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
                     b.Property<bool>("Active")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -83,7 +92,15 @@ namespace IM.Repo.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
                     b.Property<bool>("Active")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<long?>("CityId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("CountryId")
+                        .HasColumnType("bigint");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -104,6 +121,10 @@ namespace IM.Repo.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CityId");
+
+                    b.HasIndex("CountryId");
+
                     b.ToTable("Members");
                 });
 
@@ -116,7 +137,9 @@ namespace IM.Repo.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
                     b.Property<bool>("Active")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -132,8 +155,6 @@ namespace IM.Repo.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MemberId");
-
                     b.HasIndex("SkillId");
 
                     b.ToTable("MemberSkills");
@@ -148,7 +169,9 @@ namespace IM.Repo.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
 
                     b.Property<bool>("Active")
-                        .HasColumnType("bit");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
@@ -165,16 +188,42 @@ namespace IM.Repo.Migrations
                     b.ToTable("Skills");
                 });
 
+            modelBuilder.Entity("IM.Core.Entities.City", b =>
+                {
+                    b.HasOne("IM.Core.Entities.Country", "Country")
+                        .WithMany("Cities")
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Country");
+                });
+
+            modelBuilder.Entity("IM.Core.Entities.Member", b =>
+                {
+                    b.HasOne("IM.Core.Entities.City", null)
+                        .WithMany("Members")
+                        .HasForeignKey("CityId");
+
+                    b.HasOne("IM.Core.Entities.Country", "Country")
+                        .WithMany("Members")
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Country");
+                });
+
             modelBuilder.Entity("IM.Core.Entities.MemberSkill", b =>
                 {
                     b.HasOne("IM.Core.Entities.Member", "Member")
-                        .WithMany("Skills")
-                        .HasForeignKey("MemberId")
+                        .WithMany("MemberSkills")
+                        .HasForeignKey("SkillId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("IM.Core.Entities.Skill", "Skill")
-                        .WithMany()
+                        .WithMany("MemberSkills")
                         .HasForeignKey("SkillId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -184,9 +233,26 @@ namespace IM.Repo.Migrations
                     b.Navigation("Skill");
                 });
 
+            modelBuilder.Entity("IM.Core.Entities.City", b =>
+                {
+                    b.Navigation("Members");
+                });
+
+            modelBuilder.Entity("IM.Core.Entities.Country", b =>
+                {
+                    b.Navigation("Cities");
+
+                    b.Navigation("Members");
+                });
+
             modelBuilder.Entity("IM.Core.Entities.Member", b =>
                 {
-                    b.Navigation("Skills");
+                    b.Navigation("MemberSkills");
+                });
+
+            modelBuilder.Entity("IM.Core.Entities.Skill", b =>
+                {
+                    b.Navigation("MemberSkills");
                 });
 #pragma warning restore 612, 618
         }

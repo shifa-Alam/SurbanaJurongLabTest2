@@ -1,0 +1,187 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Microsoft.AspNetCore.SpaProxy/6.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.SpaProxy.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.SpaProxy.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/Microsoft.AspNetCore.SpaProxy.targets": {}
+        }
+      },
+      "IM.bll/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/IM.bll.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IM.bll.dll": {}
+        }
+      },
+      "IM.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/IM.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IM.Core.dll": {}
+        }
+      },
+      "IM.Repo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/IM.Repo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IM.Repo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.SpaProxy/6.0.8": {
+      "sha512": "thax2NAFx1IBxVk6WUd/ecJiPeMO6RgfM+zYpJImH+A4UqHQsj+WS0IQ/CCn/H2dEajLWT3OP9qZKlKL09g3cQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.spaproxy/6.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/Microsoft.AspNetCore.SpaProxy.targets",
+        "lib/net6.0/Microsoft.AspNetCore.SpaProxy.dll",
+        "microsoft.aspnetcore.spaproxy.6.0.8.nupkg.sha512",
+        "microsoft.aspnetcore.spaproxy.nuspec"
+      ]
+    },
+    "IM.bll/1.0.0": {
+      "type": "project",
+      "path": "../IM.bll/IM.bll.csproj",
+      "msbuildProject": "../IM.bll/IM.bll.csproj"
+    },
+    "IM.Core/1.0.0": {
+      "type": "project",
+      "path": "../IM.Core/IM.Core.csproj",
+      "msbuildProject": "../IM.Core/IM.Core.csproj"
+    },
+    "IM.Repo/1.0.0": {
+      "type": "project",
+      "path": "../IM.Repo/IM.Repo.csproj",
+      "msbuildProject": "../IM.Repo/IM.Repo.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "IM.Core >= 1.0.0",
+      "IM.Repo >= 1.0.0",
+      "IM.bll >= 1.0.0",
+      "Microsoft.AspNetCore.SpaProxy >= 6.0.8"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\RITE-065\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\Info.Web\\Info.Web.csproj",
+      "projectName": "Info.Web",
+      "projectPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\Info.Web\\Info.Web.csproj",
+      "packagesPath": "C:\\Users\\RITE-065\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\Info.Web\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\RITE-065\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.bll\\IM.bll.csproj": {
+              "projectPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.bll\\IM.bll.csproj"
+            },
+            "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj": {
+              "projectPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Core\\IM.Core.csproj"
+            },
+            "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj": {
+              "projectPath": "C:\\Users\\RITE-065\\Desktop\\Work\\SurbanaJurongLabTest2\\InfoManager\\IM.Repo\\IM.Repo.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.SpaProxy": {
+            "target": "Package",
+            "version": "[6.0.8, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.11, 6.0.11]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

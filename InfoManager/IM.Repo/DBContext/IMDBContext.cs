@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
@@ -23,20 +24,21 @@ namespace IM.Repo.DBContext
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            //modelBuilder.Entity<Member>()
-            //    .HasOne(a => a.Country);
-            //modelBuilder.Entity<Member>()
-            //    .HasMany(e => e.Skills).WithMany(d=>d.);
-            //modelBuilder.Entity<Member>()
-            //    .HasOne(a => a.City);
-            //modelBuilder.Entity<Member>()
-            //    .HasKey(a => a.Id);
-            //modelBuilder.Entity<Skill>()
-            //    .HasKey(e => e.Id);
-            //modelBuilder.Entity<Country>()
-            //    .HasKey(e => e.Id);
-            //modelBuilder.Entity<MemberSkill>()
-            //    .HasKey(e => e.Id);
+            modelBuilder.Entity<Member>().HasOne(s => s.Country).WithMany(g => g.Members).HasForeignKey(s => s.CountryId);
+            modelBuilder.Entity<MemberSkill>().HasOne(s => s.Member).WithMany(g => g.MemberSkills).HasForeignKey(e => e.SkillId);
+            modelBuilder.Entity<MemberSkill>().HasOne(s => s.Skill).WithMany(g => g.MemberSkills).HasForeignKey(e => e.SkillId);       
+            modelBuilder.Entity<City>().HasOne(s => s.Country).WithMany(g => g.Cities).HasForeignKey(e => e.CountryId);
+
+            modelBuilder.Entity<Member>().HasKey(e => e.Id);
+            modelBuilder.Entity<MemberSkill>().HasKey(e => e.Id);
+            modelBuilder.Entity<Country>().HasKey(e => e.Id);
+            modelBuilder.Entity<City>().HasKey(e => e.Id);
+
+            modelBuilder.Entity<Member>().Property(e => e.Active).HasDefaultValue(true);
+            modelBuilder.Entity<MemberSkill>().Property(e => e.Active).HasDefaultValue(true);
+            modelBuilder.Entity<Country>().Property(e => e.Active).HasDefaultValue(true);
+            modelBuilder.Entity<City>().Property(e => e.Active).HasDefaultValue(true);
+            modelBuilder.Entity<Skill>().Property(e => e.Active).HasDefaultValue(true);
         }
     }
 }

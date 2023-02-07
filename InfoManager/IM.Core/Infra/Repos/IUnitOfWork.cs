@@ -12,7 +12,11 @@ namespace IM.Core.Infra.Repos
         {
             get;
         }
-        ISkillRepo  SkillR
+        IMemberSkillRepo  MemberSkillR  
+        {
+            get;
+        }
+        ISkillRepo SkillR
         {
             get;
         }
